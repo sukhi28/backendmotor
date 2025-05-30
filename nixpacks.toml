@@ -1,2 +1,1 @@
-[start]
-cmd = "gunicorn server:app"
+
