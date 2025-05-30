@@ -55,8 +55,8 @@ def predict():
         prediction = model.predict(sensor_data)
         predicted_label = label_encoder.inverse_transform(prediction)[0]
 
-        # return jsonify({"prediction": predicted_label})
-        return jsonify({"predictions": [prediction_label]})
+        return jsonify({"prediction": predicted_label})
+      
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
